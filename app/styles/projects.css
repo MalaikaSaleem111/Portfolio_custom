@@ -1,0 +1,66 @@
+/* Section Styles */
+.projects-section {
+    background-color: #e2e8f0; /* Light slate background */
+    padding: 40px 20px; /* Spacing */
+    border-top: 2px solid #cbd5e0; /* Top border */
+  }
+  
+  .projects-container {
+    max-width: 1024px; /* Limit content width */
+    margin: 0 auto; /* Center align */
+  }
+  
+  /* Heading */
+  .projects-heading {
+    font-size: 2rem; /* Text size for heading */
+    font-weight: bold;
+    color: #2d3748; /* Gray-800 equivalent */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Grid Layout */
+  .projects-grid {
+    display: grid;
+    gap: 24px; /* Spacing between cards */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  
+  /* Card Styles */
+  .project-card {
+    background-color: #e2e8f0; /* Light gray */
+    border: 2px solid #718096; /* Gray-600 equivalent */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image Styles */
+  .project-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  /* Content Styles */
+  .project-content {
+    padding: 16px;
+  }
+  
+  .project-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1a202c; /* Gray-900 equivalent */
+    margin-bottom: 8px;
+  }
+  
+  .project-description {
+    color: #4a5568; /* Gray-600 equivalent */
+    line-height: 1.6;
+  }
+  

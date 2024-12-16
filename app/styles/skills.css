@@ -1,0 +1,65 @@
+/* Section Styles */
+.skills-section {
+    background-color: #e2e8f0; /* Light slate background */
+    padding: 40px 20px; /* Spacing */
+    border-top: 2px solid #cbd5e0; /* Gray border */
+  }
+  
+  .skills-container {
+    max-width: 1024px; /* Limit content width */
+    margin: 0 auto; /* Center align */
+  }
+  
+  /* Heading */
+  .skills-heading {
+    font-size: 2rem; /* Font size */
+    font-weight: bold;
+    color: #2d3748; /* Gray-800 equivalent */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Skills List */
+  .skills-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px; /* Spacing between skill items */
+  }
+  
+  /* Skill Item */
+  .skill-item {
+    width: 100%;
+  }
+  
+  .skill-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  
+  .skill-name {
+    font-weight: 600;
+    color: #2d3748; /* Gray-800 */
+  }
+  
+  .skill-level {
+    color: #4a5568; /* Gray-600 */
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    width: 100%;
+    background-color: #e2e8f0; /* Light gray */
+    border-radius: 9999px;
+    height: 12px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background-color: #4299e1; /* Blue-500 */
+    border-radius: 9999px;
+    transition: width 0.3s ease-in-out;
+  }
+  

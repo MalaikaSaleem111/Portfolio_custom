@@ -1,0 +1,27 @@
+/* About Section Styles */
+.about-section {
+    background-color: #e2e8f0; /* Light slate background */
+    padding: 40px 20px; /* Space around the section */
+    border-top: 2px solid #cbd5e0; /* Top border */
+    text-align: center;
+    color: #1a202c; /* Dark gray (Gray-900) text color */
+    height: auto; /* Adjust height automatically based on content */
+  }
+  
+  /* Heading Styles */
+  .about-heading {
+    font-size: 1.75rem; /* Text size equivalent to text-xl */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2d3748; /* Gray-800 */
+  }
+  
+  /* Text Styles */
+  .about-text {
+    font-size: 1rem; /* Standard text size */
+    line-height: 1.8; /* Comfortable line spacing */
+    max-width: 800px; /* Limit text width for better readability */
+    margin: 0 auto; /* Center the text horizontally */
+    color: #4a5568; /* Gray-600 */
+  }
+  

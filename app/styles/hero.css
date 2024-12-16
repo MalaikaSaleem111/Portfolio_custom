@@ -1,0 +1,89 @@
+/* Container */
+.hero-container {
+    display: flex;
+    flex-direction: column; /* Stack on smaller screens */
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e8f0; /* Equivalent to Tailwind's slate-200 */
+    height: 100vh; /* Full screen height */
+    padding: 20px; /* Uniform padding for all devices */
+    width: 100%;
+    box-sizing: border-box; /* Include padding in element width */
+  }
+  
+  /* Left Section (Text) */
+  .hero-text {
+    width: 100%;
+    max-width: 600px; /* Restrict text width for readability */
+    text-align: center;
+    margin-bottom: 20px; /* Space below the text for mobile view */
+  }
+  
+  .hero-text h2 {
+    font-size: 2rem; /* Default for small screens */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-text p {
+    margin-top: 10px;
+    text-align: justify;
+    padding: 0 10px; /* Padding for mobile-friendly spacing */
+    line-height: 1.6;
+    font-size: 1rem; /* Adjust font size for readability */
+  }
+  
+  /* Right Section (Image) */
+  .hero-image {
+    display: none; /* Hidden by default */
+    width: 100%;
+    max-width: 384px; /* Limit the image size */
+    padding: 0 20px;
+  }
+  
+  .hero-image img {
+    width: 100%; /* Fully responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Query for Tablets and Larger Screens */
+  @media (min-width: 768px) {
+    .hero-container {
+      flex-direction: row; /* Side-by-side layout on larger screens */
+      justify-content: space-between;
+      padding: 0 50px; /* Increase padding for larger screens */
+    }
+  
+    .hero-text {
+      text-align: left; /* Align text to the left for desktops */
+      margin-bottom: 0; /* Remove bottom margin */
+    }
+  
+    .hero-image {
+      display: block; /* Show image on larger screens */
+      width: 50%;
+    }
+  
+    .hero-text h2 {
+      font-size: 3rem; /* Increase font size for tablets and above */
+    }
+  
+    .hero-text p {
+      font-size: 1.125rem; /* Slightly larger text for readability */
+      padding: 0;
+    }
+  }
+  
+  /* Media Query for Extra Large Screens */
+  @media (min-width: 1024px) {
+    .hero-container {
+      padding: 0 100px; /* Add more space for larger screens */
+    }
+  
+    .hero-image img {
+      max-width: 450px; /* Larger image on extra large screens */
+    }
+  }
+  
