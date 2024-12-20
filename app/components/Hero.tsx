@@ -1,11 +1,12 @@
-import "../styles/hero.css"; // Import the custom CSS file
+import "../styles/hero.css";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <main className="hero-container">
       {/* Left Section */}
       <div className="hero-text">
-        <h2>Hello <br /> I'm Malaika</h2>
+        <h2>Hello <br /> I Am Malaika</h2>
         <p>
           I am a passionate Front-End Development student currently working on
           various projects to enhance my skills and knowledge. I am constantly
@@ -17,7 +18,7 @@ export default function Hero() {
 
       {/* Right Section */}
       <div className="hero-image">
-        <img src="/img1.webp" alt="Profile" />
+        <Image src="/img1.webp" alt="Profile" width={300} height={300} />
       </div>
     </main>
   );

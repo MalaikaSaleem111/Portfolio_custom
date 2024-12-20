@@ -1,4 +1,5 @@
 import "../styles/projects.css";
+import Image from "next/image";
 
 const projects = [
   {
@@ -31,9 +32,11 @@ const Projects = () => {
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
-              <img
+              <Image
                 src={project.image}
                 alt={project.title}
+                width={200}
+                height={200}
                 className="project-image"
               />
               <div className="project-content">
